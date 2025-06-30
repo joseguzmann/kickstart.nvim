@@ -30,7 +30,7 @@ require("bufferline").setup({
     show_buffer_close_icons = true,
     show_close_icon = true,
     separator_style = "slant",
-    sort_by = 'insert_after_current',
+    sort_by = 'insert_at_end',
     move_wraps_at_ends = true,
     show_duplicate_prefix = true,
     diagnostics = "nvim_lsp",
