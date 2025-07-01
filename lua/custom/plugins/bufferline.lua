@@ -57,7 +57,11 @@ return {
     vim.keymap.set('n', '<leader>1', '<Cmd>BufferLineGoToBuffer 1<CR>', { desc = 'Ir al buffer 1' })
     vim.keymap.set('n', '<leader>2', '<Cmd>BufferLineGoToBuffer 2<CR>', { desc = 'Ir al buffer 2' })
     vim.keymap.set('n', '<leader>3', '<Cmd>BufferLineGoToBuffer 3<CR>', { desc = 'Ir al buffer 3' })
-    -- ... (y así sucesivamente para los demás números)
+    vim.keymap.set('n', '<leader>4', '<Cmd>BufferLineGoToBuffer 4<CR>', { desc = 'Ir al buffer 4' })
+    vim.keymap.set('n', '<leader>5', '<Cmd>BufferLineGoToBuffer 5<CR>', { desc = 'Ir al buffer 5' })
+    vim.keymap.set('n', '<leader>6', '<Cmd>BufferLineGoToBuffer 6<CR>', { desc = 'Ir al buffer 6' })
+    vim.keymap.set('n', '<leader>7', '<Cmd>BufferLineGoToBuffer 7<CR>', { desc = 'Ir al buffer 7' })
+    vim.keymap.set('n', '<leader>8', '<Cmd>BufferLineGoToBuffer 8<CR>', { desc = 'Ir al buffer 8' })
     vim.keymap.set('n', '<leader>9', '<Cmd>BufferLineGoToBuffer 9<CR>', { desc = 'Ir al buffer 9' })
     vim.keymap.set('n', '<leader>0', '<Cmd>BufferLineGoToBuffer -1<CR>', { desc = 'Ir al último buffer' })
   end,
