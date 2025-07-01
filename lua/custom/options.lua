@@ -17,11 +17,11 @@ vim.api.nvim_create_autocmd('InsertLeave', {
 -- Bufferline
 vim.opt.termguicolors = true
 -- Inicia la configuración de bufferline
-require("bufferline").setup({
+require('bufferline').setup {
   options = {
-    mode = "buffers",
-    style_preset = require("bufferline").style_preset.default,
-    numbers = "ordinal",
+    mode = 'buffers',
+    style_preset = require('bufferline').style_preset.default,
+    numbers = 'ordinal',
     indicator = {
       icon = '▎',
       style = 'icon',
@@ -29,22 +29,22 @@ require("bufferline").setup({
     show_buffer_icons = true,
     show_buffer_close_icons = true,
     show_close_icon = true,
-    separator_style = "slant",
+    separator_style = 'slant',
     sort_by = 'insert_at_end',
     move_wraps_at_ends = true,
     show_duplicate_prefix = true,
-    diagnostics = "nvim_lsp",
+    diagnostics = 'nvim_lsp',
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
       if context.buffer:current() then
         return ''
       end
-      local icon = level:match("error") and " " or " "
-      return " " .. icon .. count
+      local icon = level:match 'error' and ' ' or ' '
+      return ' ' .. icon .. count
     end,
     persist_buffer_sort = true,
-    right_mouse_command = "bdelete! %d",
+    right_mouse_command = 'bdelete! %d',
   },
-})
+}
 
 -- Mapeos de Teclas para Bufferline
 -- Moverse entre buffers
@@ -73,3 +73,6 @@ vim.keymap.set('n', '<leader>7', '<Cmd>BufferLineGoToBuffer 7<CR>', { desc = 'Ir
 vim.keymap.set('n', '<leader>8', '<Cmd>BufferLineGoToBuffer 8<CR>', { desc = 'Ir al buffer 8' })
 vim.keymap.set('n', '<leader>9', '<Cmd>BufferLineGoToBuffer 9<CR>', { desc = 'Ir al buffer 9' })
 vim.keymap.set('n', '<leader>0', '<Cmd>BufferLineGoToBuffer -1<CR>', { desc = 'Ir al último buffer' })
+
+-- GUESS-INDENT
+require('guess-indent').setup {}
