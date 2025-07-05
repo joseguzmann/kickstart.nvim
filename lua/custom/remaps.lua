@@ -26,7 +26,7 @@ vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 -- Atajos de Portapapeles (Clipboard) y Registros
 ------------------------------------------------------------------
 -- Borrar sin afectar el portapapeles (usa el "black hole register")
-vim.keymap.keymap({ 'n', 'v' }, '<leader>d', [["_d]], { desc = 'Borrar sin guardar en registro' })
+vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]], { desc = 'Borrar sin guardar en registro' })
 
 -- Pegar en modo visual sin perder lo que tenías copiado
 vim.keymap.set('x', '<leader>p', [["_dP]], { desc = 'Pegar sin sobrescribir registro' })
