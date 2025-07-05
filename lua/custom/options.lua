@@ -14,3 +14,6 @@ vim.api.nvim_create_autocmd('InsertLeave', {
     vim.opt.relativenumber = true
   end,
 })
+
+-- Cargar atajos personalizados
+require 'custom.remaps'
