@@ -20,7 +20,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Mover línea arriba' })
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Mover línea abajo' })
 
 -- Sustituir la palabra bajo el cursor en todo el archivo
-vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Sustituir palabra en archivo' })
+vim.keymap.set('n', '<leader>sz', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = 'Sustituir palabra en archivo' })
 
 ------------------------------------------------------------------
 -- Atajos de Portapapeles (Clipboard) y Registros
